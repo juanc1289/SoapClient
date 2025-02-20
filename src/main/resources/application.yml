@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: soap-consumer
+
+  server:
+    # Si no necesitas exponer un server local en Micronaut, se puede deshabilitar con -1
+    port: -1
+
+  http:
+    client:
+      ssl:
+        insecure-trust-all-certificates: true
+#        # Activa SSL en el cliente
+#        enabled: true
+#        # Indica la ruta y propiedades del keystore (autofirmado)
+#        trust-store: keystore.jks
+#        trust-store-password: "asdf1357" # Ajusta a tu password real
+#        trust-store-type: "JKS"
